@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
         "outputPath": "dist/apps/github",
@@ -14,8 +16,15 @@
         "main": "apps/github/src/main.tsx",
         "polyfills": "apps/github/src/polyfills.ts",
         "tsConfig": "apps/github/tsconfig.app.json",
-        "assets": ["apps/github/src/favicon.ico", "apps/github/src/assets"],
-        "styles": ["apps/github/src/styles.scss"],
+        "assets": [
+          "apps/github/src/favicon.ico",
+          "apps/github/src/assets",
+          "apps/github/src/robots.txt",
+          "apps/github/src/_redirects"
+        ],
+        "styles": [
+          "apps/github/src/styles.scss"
+        ],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
@@ -51,14 +60,20 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
-        "lintFilePatterns": ["apps/github/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": [
+          "apps/github/**/*.{ts,tsx,js,jsx}"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/github"],
+      "outputs": [
+        "coverage/apps/github"
+      ],
       "options": {
         "jestConfig": "apps/github/jest.config.js",
         "passWithNoTests": true

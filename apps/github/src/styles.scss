@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+/*=============================================
+=            Tailwind imports            =
+=============================================*/
+
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+body {
+  @apply bg-l-grey relative top-0 right-0 bottom-0 left-0 m-0 p-0 w-full h-full;
+}
+
+/*=============================================
+=            Containers            =
+=============================================*/
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 992px) {
+    width: 85%;
+  }
+}
+
+.body-content {
+  min-height: calc(100vh - 11.5rem);
+}
+
+/*=============================================
+=            Buttons            =
+=============================================*/
+.button {
+  @apply text-emerald-500 bg-transparent border border-solid border-emerald-500 hover:bg-emerald-500 hover:text-white active:bg-emerald-600 font-bold uppercase px-8 py-3 rounded-full outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150;
+}
+
+/*=============================================
+=        Forms and form components        =
+=============================================*/
+.input {
+  @apply relative w-full px-3 py-3 text-sm bg-white border-0 rounded shadow outline-none;
+
+  &:focus {
+    @apply outline-none ring;
+  }
+  &::placeholder {
+    @apply text-opacity-30 text-black;
+  }
+}
+
+/*=============================================
+=            Boxes / Cards            =
+=============================================*/
+.box {
+  @apply bg-white shadow-lg p-4;
+}
+
+.card {
+  @apply w-full h-full px-5 py-5 text-sm bg-white border-b border-gray-200;
+  &.link {
+    @apply cursor-pointer;
+    &:hover {
+      @apply bg-gray-200;
+    }
+  }
+}

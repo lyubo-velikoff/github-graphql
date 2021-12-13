@@ -1,4 +1,4 @@
-const { createGlobPatternsForDependencies } = require('@nrwl/react/tailwind');
+const { createGlobPatternsForDependencies } = require('@nrwl/react/tailwind')
 
 module.exports = {
   purge: [
@@ -13,7 +13,7 @@ module.exports = {
 
     extend: {
       colors: {
-        'l-grey': '#EDF0F2',
+        'l-grey': '#f9f9f9',
       },
     },
   },
@@ -28,4 +28,4 @@ module.exports = {
     container: false,
     divideWidth: true,
   },
-};
+}

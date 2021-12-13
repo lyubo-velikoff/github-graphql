@@ -6,6 +6,10 @@ This project was generated using [Nx](https://nx.dev).
 
 - Node v14.17.5
 
+## Installation
+
+Run `npm install` or `yarn`
+
 ## Start
 
 Run `nx serve github` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.

@@ -1,0 +1,3 @@
+type BreadCrumbProps = {
+  value: string
+}
