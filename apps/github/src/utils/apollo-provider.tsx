@@ -7,7 +7,7 @@ const httpLink = createHttpLink({
 })
 
 const authLink = setContext((_, { headers }) => {
-  const token = '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'
+  const token = process.env.NX_GITHUB_TOKEN
   // return the headers to the context so httpLink can read them
   return {
     headers: {
