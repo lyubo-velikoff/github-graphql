@@ -2,6 +2,8 @@
 
 This project was generated using [Nx](https://nx.dev).
 
+Simple application that uses Github's GraphQL API service to query users with Apollo and React
+
 Live demo of the application can be found [here](https://eloquent-banach-51817f.netlify.app/)
 
 ## Prerequisites
