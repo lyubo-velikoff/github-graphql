@@ -2,9 +2,18 @@
 
 This project was generated using [Nx](https://nx.dev).
 
+Live demo of the application can be found [here](https://eloquent-banach-51817f.netlify.app/)
+
 ## Prerequisites
 
 - Node v14.17.5
+- Create Github personal [access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) and create a file in `./apps/github/.env` with the contents
+
+Replace {{PERSONAL_ACCESS_TOKEN}} with the created token
+
+```
+NX_GITHUB_TOKEN={{PERSONAL_ACCESS_TOKEN}}
+```
 
 ## Installation
 
